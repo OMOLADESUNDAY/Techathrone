@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600&display=swap");
 *{
   padding: 0;
   margin: 0;
@@ -8,26 +9,29 @@
 :root{
   /* --color-black:rgb(231, 98, 9); */
   --color-bg:#06060d;
+  /* --color-bg:white; */
   --color-black:#000000;
   --text-color:#ffffff;
-  --container-lg:85%;
-  --container-md:90%;
-  --container-sm:95%;
+  --container-lg:90%;
+  --container-md:95%;
+  --container-sm:98%;
   --transition:0.5s ease-in;
-  --color-primary:#b202d1;
+  --color-tertiary:#b202d1;
+  --color-primary:#fe6500;
   --color-secondary:rgb(15, 224, 137);
-}
-::-webkit-scrollbar{
-  display: none;
+  --color-secondary:#003398;
 }
 html{
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar{
+  display: none;
+}
+
 body {
+
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+ font-family: "poppons", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--color-bg);
@@ -45,8 +49,10 @@ a{
   padding:0.8rem 1.2rem;
   cursor: pointer;
   background-color: var(--color-primary);
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   transition: var(--transition);
+  border: none;
+  font-size: 1.2rem;
 }
 .btn:hover{
   color: var(--color-primary);

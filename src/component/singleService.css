@@ -1,0 +1,53 @@
+.singleServiceContainer{
+    width: 23%;
+    background-color: white;
+    color: black;
+    box-shadow: 2px 3px 4px 5px gray;
+    border-radius: 0 0 0 10%;
+    height: 350px;
+    /* border:1px solid var(--color-primary); */
+    overflow-y:auto;
+    
+}
+
+/* .singleServiceImgContainer{
+   
+   
+} */
+.singleServiceImg{
+     height: 200px;
+   
+}
+.singleServiceContentContainer{
+    padding: 1rem;
+}
+.singleServiceContentContainer h2{
+    text-transform: capitalize;
+    color: var(--color-primary);
+}
+.tick{
+    color: var(--color-primary);
+}
+.ticklist{
+    margin: 0.5rem;
+}
+@media screen and (max-width:1024px) {
+  .singleServiceContainer{
+   width: 40%;
+  }
+}
+@media screen and (max-width:768px) {
+  .singleServiceContainer{
+   width: 45%;
+  }
+}
+@media screen and (max-width:600px) {
+  .singleServiceContainer{
+   width: 75%;
+  }
+}
+@media screen and (max-width:400px) {
+  .singleServiceContainer{
+   width: 85%;
+  }
+}

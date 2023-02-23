@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { BiMenu } from "react-icons/bi";
 import { TiTimes } from "react-icons/ti";
-import logo from  '../image/Throne logo.JPG'
+import logo from  '../image/Throne_logo-removebg-preview.png'
 import "./navbar.css";
 
 const Navbar = () => {
@@ -21,53 +20,57 @@ const Navbar = () => {
   };
  
   return (
-    <header className="header container">
+    <div className="container">
       <nav className={show ? "navbarchange navbar" : "navbar"}>
-        <div className="logoContainer"><img src={logo} alt='SOLAR'/></div>
+        <div className="logoContainer">
+          <a href="#home">
+            <img src={logo} alt="SOLAR" />
+          </a>
+        </div>
         <div
           className={show ? "togglerContainerChange" : "togglerContainer"}
           onClick={togglerHandler}
         >
-          {show ? <TiTimes /> : <BiMenu />}
+          {show ? <TiTimes className="col" /> : <BiMenu className="col" />}
         </div>
         <div className={show ? "show navlistContainer" : "navlistContainer"}>
           <div className="leftNavbar">
             <li>
-              <Link to="/" onClick={() => setShow(false)}>
+              <a href="#home" onClick={() => setShow(false)}>
                 Home
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/marketplace" onClick={() => setShow(false)}>
+              <a href="#about" onClick={() => setShow(false)}>
                 About
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/assets" onClick={() => setShow(false)}>
+              <a href="#service" onClick={() => setShow(false)}>
                 Service
-              </Link>
+              </a>
             </li>
           </div>
           <div className="rightNavbar">
             <li>
-              <Link to="/events" onClick={() => setShow(false)}>
+              <a href="#testimonies" onClick={() => setShow(false)}>
                 Clients
-              </Link>
+              </a>
             </li>
             <li>
-              <Link onClick={() => setShow(false)} to="/login">
-                blog
-              </Link>
+              <a onClick={() => setShow(false)} href="#gallery">
+                Gallery
+              </a>
             </li>
             <li>
-              <Link onClick={() => setShow(false)} to="/signup">
-                contact
-              </Link>
+              <a onClick={() => setShow(false)} href="#contact">
+                Contact
+              </a>
             </li>
           </div>
         </div>
       </nav>
-    </header>
+    </div>
   );
 };
 

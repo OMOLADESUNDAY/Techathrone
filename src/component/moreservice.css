@@ -1,0 +1,90 @@
+.moreServiceContainer{
+    margin-top: 3rem;
+    display: flex;
+    gap: 2rem;
+}
+.leftmoreContainer{
+    width: 49%;
+}
+.downmore{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.downmoreleft{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.happcon h3{
+    color: var(--color-secondary);
+}
+.happcon p{
+    font-weight: 600;
+}
+.morewelcome{
+    color: var(--color-primary);
+}
+.horiLine{
+    width: 35px;
+    height: 2px;
+    border:1px solid var(--color-primary);
+    color: var(--color-primary);
+}
+.wlc{
+    display: flex;
+    align-items: center;
+}
+.moreicon{
+    color: var(--color-primary);
+    font-size: 2rem;
+}
+.morelearn{
+    margin-top: 1rem;
+}
+.moredetail{
+    margin: 1rem 0;
+}
+.rightmoreContainer{
+    width: 49%;
+    height: 300px;
+}
+@media screen and (max-width:1024px) {
+  .rightmoreContainer{
+    height: 320px;
+  }
+}
+@media screen and (max-width:768px) {
+    .moreServiceContainer{
+        gap: 0;
+    }
+    .leftmoreContainer{
+        width:50%;
+    }
+  .rightmoreContainer{
+    height: 350px;
+    width: 50%;
+  }
+  .morelearn{
+    margin:2rem 1rem;
+  }
+}
+@media screen and (max-width:600px) {
+    .moreServiceContainer{
+        flex-direction: column;
+    }
+  .leftmoreContainer{
+    width: 80%;
+    margin: auto;
+  }
+  .rightmoreContainer{
+    /* padding-top: 2rem; */
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width:400px) {
+  
+}
