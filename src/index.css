@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 *{
   padding: 0;
   margin: 0;
@@ -7,9 +7,7 @@
   text-decoration: none;
 }
 :root{
-  /* --color-black:rgb(231, 98, 9); */
   --color-bg:#06060d;
-  /* --color-bg:white; */
   --color-black:#000000;
   --text-color:#ffffff;
   --container-lg:90%;
@@ -31,7 +29,7 @@ html{
 body {
 
   margin: 0;
- font-family: "poppons", sans-serif;
+ font-family: 'Roboto Slab', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--color-bg);

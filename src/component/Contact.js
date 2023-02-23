@@ -11,9 +11,9 @@ const Contact = () => {
   const emailRef = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-    const name = nameRef.current.value
-    const email =emailRef.current.value;
-    const message = messageRef.current.value;
+    // const name = nameRef.current.value
+    // const email =emailRef.current.value;
+    // const message = messageRef.current.value;
     e.target.reset();
   };
 
