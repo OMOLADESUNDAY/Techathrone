@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { useEffect } from 'react';
+
 import Navbar from './component/Navbar';
 import Home from './component/Home';
 import Service from './component/Service';
@@ -9,12 +9,9 @@ import About from './component/About';
 import MoreService from './component/MoreService';
 import Gallery from './component/Gallery';
 import Contact from './component/Contact';
-// import  AOS  from "aos";
-// import "aos/dist/aos.css";
+
 function App() {
-    // useEffect(() => {
-    //   AOS.init();
-    // }, []);
+
   return (
     <div className="">
       <Navbar />
