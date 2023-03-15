@@ -1,22 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { data } from "../data";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
 import { useRef } from "react";
 import "./Contact.css";
+import axios from "axios";
 const Contact = () => {
   const nameRef = useRef();
   const messageRef = useRef();
   const emailRef = useRef();
-  const sendEmail = (e) => {
+  const [success,setSuccess]=useState()
+  const sendEmail = async(e) => {
     e.preventDefault();
-    // const name = nameRef.current.value
-    // const email =emailRef.current.value;
-    // const message = messageRef.current.value;
+    const name = nameRef.current.value
+    const email =emailRef.current.value;
+    const message = messageRef.current.value;
+    const data={name,email,message}
+    console.log(data)
+    const response=await axios.post('http://localhost:5000/api/post',data)
+    setSuccess(response.data.message)
+    setTimeout(()=>{
+      setSuccess('')
+    },1000)
     e.target.reset();
   };
-
+  
   return (
     <section id="contact">
       <h5 className="h5">Get In Touch</h5>
@@ -28,8 +37,7 @@ const Contact = () => {
             <h4>Email</h4>
             <h4>techathrone22@gmail.com</h4>
             <a
-              href="mailto:techathrone22@gmail.com
-"
+              href="mailto:techathrone22@gmail.com"
               target="_blank"
               rel="noreferrer"
             >
@@ -73,6 +81,7 @@ const Contact = () => {
             placeholder="Your message"
             required
           ></textarea>
+          <div>{success}</div>
           <button type="submit" className="btn btn-primary">
             Send Message
           </button>

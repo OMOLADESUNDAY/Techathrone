@@ -9,12 +9,12 @@ import About from './component/About';
 import MoreService from './component/MoreService';
 import Gallery from './component/Gallery';
 import Contact from './component/Contact';
-import  AOS  from "aos";
-import "aos/dist/aos.css";
+// import  AOS  from "aos";
+// import "aos/dist/aos.css";
 function App() {
-    useEffect(() => {
-      AOS.init();
-    }, []);
+    // useEffect(() => {
+    //   AOS.init();
+    // }, []);
   return (
     <div className="">
       <Navbar />

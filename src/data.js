@@ -146,11 +146,6 @@ export const data = {
   email: "sundayomoladee11@gmail.com",
   phoneNo: "07069258526",
   me: Me,
-  facebookUrl: "https://www.facebook.com/omolade.sunday.75",
+  facebookUrl: "https://web.facebook.com/profile.php?id=100086079301371",
   instagramUrl: "https://www.instagram.com/omolade.sunday.75",
-  twitterUrl: "https://www.twitter.com/omolade.sunday.75",
-  linkedinUrl: "https://www.linkedin.com/in/sunday-omolade-6b6a69227/",
-  githubUrl: "https://github.com/omoladesunday",
-  dribbleUrl: "www.dribbble.com",
-  behanceUrl: "www.behance.com"
 }
